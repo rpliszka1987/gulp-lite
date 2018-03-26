@@ -1,4 +1,4 @@
-var localhost = 'http://powersimple.192.168.1.11.xip.io:8899';//SET local dev url here
+var localhost = 'http://powersimple.192.168.1.1.xip.io:8899';//SET local dev url here
 
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
@@ -26,15 +26,17 @@ gulp.task('styles', function() {
           
             cascade: false
         }))
-    .pipe(sourcemaps.init())
-    .pipe(identityMap()) // .js and .css files will get a generated sourcemap
+     .pipe(concat('style.css'))
+  .pipe(sourcemaps.init())
+  //  .pipe(identityMap()) // .js and .css files will get a generated sourcemap
+    
   .pipe(sourcemaps.write())
-      .pipe(concat('style.css'))
+
     .pipe(gulp.dest('./'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
     .pipe(gulp.dest('./'))
-    .pipe(notify({ message: 'Styles Compiled Successfully' }))
+    .pipe(notify({ message: 'Style Compiled, now smile' }))
     .pipe(browserSync.stream());
 });
 
