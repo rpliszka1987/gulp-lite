@@ -1,4 +1,4 @@
-var localhost = 'http://powersimple.192.168.1.1.xip.io:8899';//SET local dev url here
+var localhost = 'http://powersimple.192.168.1.11.xip.io:8899';//SET local dev url here
 
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
@@ -39,7 +39,6 @@ gulp.task('styles', function() {
     .pipe(notify({ message: 'Style Compiled, now smile' }))
     .pipe(browserSync.stream());
 });
-
 // Scripts
 gulp.task('scripts_custom', function() {
   return gulp.src('app/js/custom/**/*.js')

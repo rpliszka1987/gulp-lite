@@ -9,4 +9,6 @@ function mychildtheme_enqueue_styles() {
    );
 }
 add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_styles' );
+wp_enqueue_script('main', get_stylesheet_directory_uri() . '/main.js',false,'1.1',"all");
+
 ?>
