@@ -9,10 +9,10 @@ DO NOT EDIT IN STYLE.CSS
     PUT YOUR COLOR PALETTE HERE:
 */
 
-@import url('https://fonts.googleapis.com/css?family=Rubik|Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Ubuntu');
 
 #masthead, #colophon {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
 
     .navigation-top {
         background-color: #c96bff;
@@ -29,7 +29,8 @@ DO NOT EDIT IN STYLE.CSS
 }
 
 #content {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45%;
     .page-header {
         background-color: #0f0;
     }
