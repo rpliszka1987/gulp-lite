@@ -11,6 +11,7 @@ DO NOT EDIT IN STYLE.CSS
 
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Ubuntu');
 
+
 #masthead, #colophon {
     font-family: 'Shadows Into Light', cursive;
 
@@ -36,9 +37,9 @@ DO NOT EDIT IN STYLE.CSS
     }
 }
 
-footer {
-    background-color: rgb(255, 240, 111);
-}
+
 #page {
     font-family: 'EB Garamond', serif;
 }
+
+@import "empty";
