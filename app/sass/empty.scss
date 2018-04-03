@@ -12,10 +12,18 @@ body, html{
     top: 50%;
     left: 50%;
     margin-left: -25%;
+    background-color: #fff;
+    border-color: 1px solid #000;
+    @media(max-width: 539px) {
+        background-color: #0f0;
+    }
+    @media(min-width: 540px) and (max-width: 767px) {
+        background-color: #00f;
+    }
 }
 
 .container {
-    color: #fff;   
+    color: #000;   
 }
 
 header{
