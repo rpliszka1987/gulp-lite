@@ -13,10 +13,31 @@
         <h1> Hi </h1>
     </header>
     <div id="page" class="container">
-        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+        
+        <div class="videoWrapper">
+            <!-- Copy & Pasted from YouTube -->
+            <iframe  src="https://www.youtube.com/embed/QwievZ1Tx-8" frameborder="0" allowfullscreen></iframe>
+
+        </div> 
+        
+        <div id="my-list">
+        <!-- ul>li*5 --> 
+        <!-- Unorderd list -->   
+        <span> NY Teams </span>
+            <ul>
+                <li>Giaents</li>
+                <li>Jets</li>
+                <li>Mets</li>
+                <li>Yankees</li>
+                <li>Rangers</li>
+            </ul>
+        </div>
+    
     </div>
     <footer>
         footer
+
+        你好
     </footer>
 </body>
 </html>
