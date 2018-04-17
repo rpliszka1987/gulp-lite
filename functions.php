@@ -9,6 +9,12 @@ function mychildtheme_enqueue_styles() {
    );
 }
 add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_styles' );
-wp_enqueue_script('main', get_stylesheet_directory_uri() . '/main.js',false,'1.1',"all");
 
+function adding_scripts() {
+
+    wp_register_script('main',get_stylesheet_directory_uri() . '/main.js', array('jquery'),'1.1', true);
+    wp_enqueue_script('main');
+    }
+    
+    add_action( 'wp_enqueue_scripts', 'adding_scripts' );
 ?>

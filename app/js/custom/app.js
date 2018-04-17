@@ -1,21 +1,46 @@
+// String Variable
 var name = "value";
+ 
+// Object variable
 var my_object = {
-	"we use arrays when we need" : "a variable name",
-	"object Sytax" : "is wrapped in Curly Braces",
-	"variables are" : "wraped in quotes and separated by a colon"
+	vacation_1 : "Dominican Republic",
+	vacation_2 : "Bermuda",
+	vacation_3 : "Jamaica"
 };
+
+// Array variable
 var my_array = [
-	"wrapped in square braces",
-	"are addressed using numeric elements",
-	"begin with zero, not one"
+	"Play Basketball",
+	"Go on vacations",
+	"Take a nap"
 ];
 
+function loop_object(obj){
+	for(var i in obj){
+		console.log(i, obj[i]);
+	}
 
-function funcky (argument){
+}
+
+loop_object(my_object);
+
+function loop_arrays(arr) {
+	for (var i = 0; i < arr.length; i++){
+		console.log(i, arr[i]);
+		document.getElementById('ok').innerHTML += arr[i];
+	}
+}
+
+loop_arrays(my_array);
+
+
+function funcky (arg1, arg2){
 	console.log("dump",my_object);
 	console.log("dump", my_array);
-	return name + "that gets returned with "+ argument;
+	return name + "that gets returned with "+ arg1 + " and " + arg2;
 }
 
 
-funcky('a function');
+funcky('a function', 'javascriptsnpm');
+
+

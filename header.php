@@ -29,6 +29,10 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
+		<div id="ok">
+
+		</div>
+
 		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 
 		<?php if ( has_nav_menu( 'top' ) ) : ?>
@@ -38,6 +42,8 @@
 				</div><!-- .wrap -->
 			</div><!-- .navigation-top -->
 		<?php endif; ?>
+
+		
 
 	</header><!-- #masthead -->
 
