@@ -14,11 +14,7 @@
     </header>
     <div id="page" class="container">
         
-        <div class="videoWrapper">
-            <!-- Copy & Pasted from YouTube -->
-            <iframe  src="https://www.youtube.com/embed/QwievZ1Tx-8" frameborder="0" allowfullscreen></iframe>
-
-        </div> 
+        
         
         <div id="my-list">
         <!-- ul>li*5 --> 
@@ -32,7 +28,18 @@
                 <li>Rangers</li>
             </ul>
         </div>
+
+        <div class="mycol">
+            Col 1
+        </div>
     
+        <div class="mycol">
+            Col 2
+        </div>
+
+        <div class="mycol">
+            Col 3
+        </div>
     </div>
     <footer>
         footer
